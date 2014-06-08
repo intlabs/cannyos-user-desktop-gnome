@@ -74,8 +74,6 @@ WORKDIR /CannyOS/Desktop
 RUN git clone git://github.com/kanaka/noVNC
 RUN cp noVNC/vnc_auto.html noVNC/index.html
 
-USER user
-
 #****************************************************
 #                                                   *
 #         ONLY PORT RULES BELLOW THIS               *
