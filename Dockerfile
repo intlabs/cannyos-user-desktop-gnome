@@ -46,7 +46,7 @@ RUN chmod +x /CannyOS/Desktop/Gnome/gnome-keybindings.pl
 
 # Add the script to fix and customise GNOME for docker
 ADD CannyOS/Desktop/Gnome/gnome-docker-fix-and-customise.sh /CannyOS/Desktop/Gnome/gnome-docker-fix-and-customise.sh
-RUN chmod +x /CannyOS/Desktop/Gnome/nome-docker-fix-and-customise.sh
+RUN chmod +x /CannyOS/Desktop/Gnome/gnome-docker-fix-and-customise.sh
 
 # Set up VNC
 RUN apt-get install -y expect

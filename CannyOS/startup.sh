@@ -46,17 +46,6 @@ echo "*****************************************************"
 echo ""
 
 #Startup script begins:
-#this sets the vnc password
-/CannyOS/Desktop/VNC/start-vnc-expect-script.sh &
-
-#fixes a warning with starting nautilus on firstboot - which we will always be doing.
-mkdir -p ~/.config/nautilus &
-
-#this starts the vnc server
-USER=root vncserver :1 -geometry 1920x1080 -depth 24 &
-
-#this starts noVNC
-/CannyOS/Desktop/noVNC/utils/launch.sh --vnc 127.0.0.1:5901 --listen 80 &
 
 
 echo ""
