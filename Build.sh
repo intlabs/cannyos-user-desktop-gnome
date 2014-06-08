@@ -52,9 +52,8 @@ sudo mkdir -p "/CannyOS/build/cannyos-user-desktop-gnome"
 # Ensure that there it is clear
 sudo rm -r -f "/CannyOS/build/cannyos-user-desktop-gnome/*"
 
-# Remove any old containers
+# Remove any existing containers
 sudo docker stop cannyos-user-desktop-gnome
-sudo docker rm cannyos-user-desktop-gnome
 
 # Launch built base container image
 sudo docker run -i -t --rm \

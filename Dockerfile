@@ -41,12 +41,12 @@ RUN sed -i -e 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ss
 RUN apt-get update && apt-get install -y xorg gnome-core gnome-session-fallback tightvncserver
 
 # Pull in the hack to fix keyboard shortcut bindings for GNOME 3 under VNC
-ADD gnome-keybindings.pl /usr/local/etc/gnome-keybindings.pl
-RUN chmod +x /usr/local/etc/gnome-keybindings.pl
+ADD CannyOS/Desktop/Gnome/gnome-keybindings.pl /CannyOS/Desktop/Gnome/gnome-keybindings.pl
+RUN chmod +x /CannyOS/Desktop/Gnome/gnome-keybindings.pl
 
 # Add the script to fix and customise GNOME for docker
-ADD gnome-docker-fix-and-customise.sh /usr/local/etc/gnome-docker-fix-and-customise.sh
-RUN chmod +x /usr/local/etc/gnome-docker-fix-and-customise.sh
+ADD CannyOS/Desktop/Gnome/gnome-docker-fix-and-customise.sh /CannyOS/Desktop/Gnome/gnome-docker-fix-and-customise.sh
+RUN chmod +x /CannyOS/Desktop/Gnome/nome-docker-fix-and-customise.sh
 
 # Set up VNC
 RUN apt-get install -y expect
