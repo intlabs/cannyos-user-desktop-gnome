@@ -62,8 +62,8 @@ ADD CannyOS/Desktop/X11/xstartup /home/user/.vnc/xstartup
 RUN chmod 755 /home/user/.vnc/xstartup
 
 #Add script to start vnc sever and set password - should be replaced with somthing much more elegant
-ADD CannyOS/Desktop/Gnome/start-vnc-expect-script.sh /CannyOS/Desktop/Gnome/start-vnc-expect-script.sh
-RUN chmod +x /CannyOS/Desktop/Gnome/start-vnc-expect-script.sh
+ADD CannyOS/Desktop/VNC/start-vnc-expect-script.sh /CannyOS/Desktop/VNC/start-vnc-expect-script.sh
+RUN chmod +x /CannyOS/Desktop/VNC/start-vnc-expect-script.sh
 
 #Add the tightvnc configuration file
 ADD CannyOS/Desktop/VNC/vnc.conf /etc/vnc.conf
