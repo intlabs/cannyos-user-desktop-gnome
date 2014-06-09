@@ -61,5 +61,5 @@ sudo docker run -i -t --rm \
  --volume "/CannyOS/build/cannyos-user-desktop-gnome":"/CannyOS/Host" \
  --name "cannyos-user-desktop-gnome" \
  --user "root" \
- -p 80:80 \
+ -p 800:80 \
  intlabs/cannyos-user-desktop-gnome 
