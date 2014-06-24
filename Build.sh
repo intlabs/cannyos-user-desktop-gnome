@@ -60,6 +60,7 @@ sudo docker run -i -t --rm \
  --privileged=true --lxc-conf="native.cgroup.devices.allow = c 10:229 rwm" \
  --volume "/CannyOS/build/cannyos-user-desktop-gnome":"/CannyOS/Host" \
  --name "cannyos-user-desktop-gnome" \
+ --hostname "cannyos-user-desktop-gnome" \
  --user "root" \
- -p 800:80 \
+ -p 800:80 -p 5900:5900 -p 5901:5901 \
  intlabs/cannyos-user-desktop-gnome 
